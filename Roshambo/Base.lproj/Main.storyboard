@@ -16,11 +16,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCu-Ov-9FN">
+                                <rect key="frame" x="131" y="283" width="37" height="32"/>
+                                <state key="normal" image="Rock"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdj-c3-LPc">
+                                <rect key="frame" x="263" y="267" width="75" height="65"/>
+                                <state key="normal" image="Paper"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMT-WZ-hGI">
+                                <rect key="frame" x="414" y="267" width="75" height="65"/>
+                                <state key="normal" image="Scissors"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a hand!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpF-cA-lpc">
+                                <rect key="frame" x="253" y="113" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tpF-cA-lpc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7r0-9y-y76"/>
+                            <constraint firstItem="Gdj-c3-LPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ADp-KJ-Edg"/>
+                            <constraint firstItem="tpF-cA-lpc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="MXl-iW-x7R"/>
+                            <constraint firstItem="QMT-WZ-hGI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="247" id="VgT-S1-bcA"/>
+                            <constraint firstItem="Gdj-c3-LPc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="247" id="fQj-PQ-Aqy"/>
+                            <constraint firstItem="pCu-Ov-9FN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="247" id="q2P-4z-IAf"/>
+                            <constraint firstItem="QMT-WZ-hGI" firstAttribute="leading" secondItem="Gdj-c3-LPc" secondAttribute="trailing" constant="76" id="sKd-Zb-8yG"/>
+                            <constraint firstItem="Gdj-c3-LPc" firstAttribute="leading" secondItem="pCu-Ov-9FN" secondAttribute="trailing" constant="76" id="ww4-yL-KvW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="372"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="egh-Ft-cOR">
@@ -38,7 +69,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBo-dp-oxq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957" y="387"/>
+            <point key="canvasLocation" x="953" y="372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Paper" width="37" height="32"/>
+        <image name="Rock" width="37" height="32"/>
+        <image name="Scissors" width="37" height="32"/>
+    </resources>
 </document>
